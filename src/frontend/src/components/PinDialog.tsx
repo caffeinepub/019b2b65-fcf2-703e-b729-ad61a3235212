@@ -47,7 +47,7 @@ function PinDialog({ position, onClose }: PinDialogProps) {
   };
 
   return (
-    <Dialog open onOpenChange={onClose}>
+    <Dialog open={true} onOpenChange={onClose}>
       <DialogContent className="sm:max-w-[500px]">
         <DialogHeader>
           <DialogTitle className="flex items-center gap-2">
@@ -83,6 +83,7 @@ function PinDialog({ position, onClose }: PinDialogProps) {
                 rows={5}
                 className="resize-none"
                 disabled={createPin.isPending}
+                autoFocus
               />
               <p className="text-xs text-muted-foreground">
                 {memo.length} characters

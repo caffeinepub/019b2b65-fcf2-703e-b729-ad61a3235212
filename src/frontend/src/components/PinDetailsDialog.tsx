@@ -17,7 +17,7 @@ interface PinDetailsDialogProps {
 
 function PinDetailsDialog({ pin, onClose }: PinDetailsDialogProps) {
   return (
-    <Dialog open onOpenChange={onClose}>
+    <Dialog open={true} onOpenChange={onClose}>
       <DialogContent className="sm:max-w-[550px]">
         <DialogHeader>
           <DialogTitle className="flex items-center gap-2">

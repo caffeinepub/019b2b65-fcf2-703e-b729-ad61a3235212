@@ -1,11 +1,11 @@
 {
   "frontend/src/App.tsx": "Main application component that sets up theme provider, query client, and renders the MapPage with toast notifications.",
-  "frontend/src/pages/MapPage.tsx": "Main page component that manages the world map state, handles pin creation and viewing, and coordinates between the map and dialog components.",
+  "frontend/src/pages/MapPage.tsx": "Main page component that manages the world map state, handles pin creation and viewing, and coordinates between the map and dialog components with proper state management for selected positions and pins.",
   "frontend/src/components/Header.tsx": "Application header with branding, map pin icon, and descriptive subtitle.",
   "frontend/src/components/Footer.tsx": "Footer component with copyright notice and caffeine.ai attribution link with heart icon.",
-  "frontend/src/components/WorldMap.tsx": "Interactive Leaflet-based world map component that loads Leaflet via CDN, supports pan/zoom/click interactions, displays pins with custom markers from real geographic coordinates, and handles pin click events to show details.",
-  "frontend/src/components/PinDialog.tsx": "Dialog component for creating new pins with location coordinates display (6 decimal precision) and memo input form.",
-  "frontend/src/components/PinDetailsDialog.tsx": "Dialog component for viewing existing pin details including coordinates (6 decimal precision) and memo content.",
-  "frontend/src/hooks/useQueries.ts": "React Query hooks for fetching all pins and creating new pins with automatic cache invalidation.",
+  "frontend/src/components/WorldMap.tsx": "Interactive Leaflet-based world map component that loads Leaflet via CDN, supports pan/zoom/click interactions, displays pins with custom markers from real geographic coordinates, handles pin click events to show details, and prevents event propagation on marker clicks.",
+  "frontend/src/components/PinDialog.tsx": "Dialog component for creating new pins with location coordinates display (6 decimal precision), memo input form with validation, backend integration via useCreatePin hook, and automatic map refresh on successful creation.",
+  "frontend/src/components/PinDetailsDialog.tsx": "Dialog component for viewing existing pin details including ID badge, coordinates (6 decimal precision), and memo content with proper formatting.",
+  "frontend/src/hooks/useQueries.ts": "React Query hooks for fetching all pins and creating new pins with automatic cache invalidation to refresh the map immediately after pin creation.",
   "frontend/src/index.css": "Global styles with OKLCH color system customized for a blue-themed map application with proper light and dark mode support."
 }

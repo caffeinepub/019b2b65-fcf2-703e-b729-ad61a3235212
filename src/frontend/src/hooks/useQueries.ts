@@ -25,6 +25,7 @@ export function useCreatePin() {
       return actor.createPin(data.latitude, data.longitude, data.memo);
     },
     onSuccess: () => {
+      // Invalidate and refetch pins to show the new pin immediately
       queryClient.invalidateQueries({ queryKey: ['pins'] });
     },
   });

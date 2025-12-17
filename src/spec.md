@@ -13,9 +13,11 @@ An interactive world map application that allows users to place pins on any loca
 
 ### Pin Management
 - Allow users to click on any location on the map to place a pin at the exact coordinates
-- When placing a pin, prompt the user to enter a short memo about that location
+- When placing a pin, show an input dialog where users can enter a memo about that location
+- The input dialog must integrate with the backend `createPin` function to save the pin with latitude, longitude, and memo values
+- After creating a pin, immediately refresh the map to display the new pin at that location
 - Display all existing pins on the map as visual markers at their precise geographic locations
-- Allow users to click on existing pins to view and expand their associated memos via PinDetailsDialog
+- Allow users to click on existing pins to view their associated memos and coordinates via a details dialog
 
 ### Data Persistence
 - Save all pins with their coordinates and associated memos persistently in the backend
@@ -31,7 +33,8 @@ An interactive world map application that allows users to place pins on any loca
 ## User Interface
 - Real-world interactive map with accurate geography using a proper map library
 - Clear visual indicators for pin locations on the actual map
-- Simple form for entering memos when placing pins
-- Expandable view for reading existing pin memos via PinDetailsDialog
+- Input dialog that appears when clicking on the map to enter memos for new pins
+- Details dialog for viewing existing pin memos and coordinates when clicking on pins
 - Responsive design for different screen sizes
+- All content and interface elements in English
 - Preserve all existing backend integration functionality
