@@ -6,14 +6,16 @@ An interactive world map application that allows users to place pins on any loca
 ## Core Features
 
 ### Map Display
-- Display an interactive world map that users can navigate (zoom, pan)
-- Support clicking anywhere on the map to place new pins
+- Display an interactive real-world map using a proper map library (React Leaflet or similar globe projection)
+- Show accurate world geography with proper country boundaries, coastlines, and terrain
+- Support zooming and panning with smooth navigation controls
+- Support clicking anywhere on the map to place new pins at precise latitude/longitude coordinates
 
 ### Pin Management
-- Allow users to click on any location on the map to place a pin
+- Allow users to click on any location on the map to place a pin at the exact coordinates
 - When placing a pin, prompt the user to enter a short memo about that location
-- Display all existing pins on the map as visual markers
-- Allow users to click on existing pins to view and expand their associated memos
+- Display all existing pins on the map as visual markers at their precise geographic locations
+- Allow users to click on existing pins to view and expand their associated memos via PinDetailsDialog
 
 ### Data Persistence
 - Save all pins with their coordinates and associated memos persistently in the backend
@@ -27,8 +29,9 @@ An interactive world map application that allows users to place pins on any loca
 - Provide functionality to retrieve a specific pin's details
 
 ## User Interface
-- Clean, intuitive map interface
-- Clear visual indicators for pin locations
+- Real-world interactive map with accurate geography using a proper map library
+- Clear visual indicators for pin locations on the actual map
 - Simple form for entering memos when placing pins
-- Expandable view for reading existing pin memos
+- Expandable view for reading existing pin memos via PinDetailsDialog
 - Responsive design for different screen sizes
+- Preserve all existing backend integration functionality

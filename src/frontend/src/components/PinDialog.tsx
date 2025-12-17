@@ -65,10 +65,10 @@ function PinDialog({ position, onClose }: PinDialogProps) {
               <Label className="text-sm font-medium text-muted-foreground">Location</Label>
               <div className="rounded-lg bg-muted/50 p-3 text-sm">
                 <p>
-                  <span className="font-medium">Latitude:</span> {position.lat.toFixed(4)}°
+                  <span className="font-medium">Latitude:</span> {position.lat.toFixed(6)}°
                 </p>
                 <p>
-                  <span className="font-medium">Longitude:</span> {position.lng.toFixed(4)}°
+                  <span className="font-medium">Longitude:</span> {position.lng.toFixed(6)}°
                 </p>
               </div>
             </div>
